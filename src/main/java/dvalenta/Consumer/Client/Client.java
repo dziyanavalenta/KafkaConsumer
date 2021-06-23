@@ -6,8 +6,6 @@ import lombok.Data;
 import lombok.Getter;
 
 @Data
-@Getter
-@Builder
 public class Client {
    private Long clientId;
    private String email;
@@ -18,14 +16,6 @@ public class Client {
    ) {
       this.clientId = clientId;
       this.email = email;
-   }
-
-   public Long getClientId() {
-      return clientId;
-   }
-
-   public String getEmail() {
-      return email;
    }
 
 }
